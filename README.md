@@ -1,16 +1,23 @@
-.city {
- background-color: lavenderBlush;
- font-weight: bold;
- padding: 7px 10px 7px 10px;
-}
+var cityRent1 = 1200;
+var cityRent2 = 800;
 
-body {
- text-align: center;
- font-size: 17px;
- color: midnightBlue;
-}
+var isMoreExpensive = cityRent1 > cityRent2;
+var comparisonLabel =
+ "Paris is more expensive: " +
+ isMoreExpensive;
+console.log(comparisonLabel);
 
-.comparison {
- background-color: blueViolet;
- color: white;
-}
+var difference = cityRent1 - cityRent2;
+var differenceLabel = "Rent difference: " +
+ difference + " Euros";
+console.log(differenceLabel);
+
+
+document.getElementById("city1").innerHTML =
+ "Paris Rent: " + cityRent1;
+document.getElementById("city2").innerHTML =
+ "Barcelona Rent: " + cityRent2;
+document.getElementById("comparison")
+ .innerHTML = comparisonLabel;
+document.getElementById("difference")
+ .innerHTML = differenceLabel;
