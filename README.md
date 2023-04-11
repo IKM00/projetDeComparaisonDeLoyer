@@ -1,20 +1,16 @@
-<!doctype html>
-<html>
- <head>
-  <link href="style.css" rel="stylesheet">
- </head>
- <body>
-  <img src="/img/compare-cities.png">
-  <p class="city">
-   <strong id="city1">Paris Rent: 1200
-    Euros</strong>
-  </p>
-  <p class="city">
-   <strong id="city2">Barcelona Rent: 940
-    Euros</strong>
-  </p>
-  <p id="comparison" class="comparison"></p>
-  <p id="difference"></p>
-  <script src="script.js"></script>
- </body>
-</html>
+.city {
+ background-color: lavenderBlush;
+ font-weight: bold;
+ padding: 7px 10px 7px 10px;
+}
+
+body {
+ text-align: center;
+ font-size: 17px;
+ color: midnightBlue;
+}
+
+.comparison {
+ background-color: blueViolet;
+ color: white;
+}
